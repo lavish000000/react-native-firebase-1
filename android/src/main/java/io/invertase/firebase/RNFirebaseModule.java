@@ -38,6 +38,11 @@ public class RNFirebaseModule extends ReactContextBaseJavaModule {
     return TAG;
   }
 
+  @Override    
+    public boolean canOverrideExistingModule() {        
+       return true;    
+  }   
+
 
   @ReactMethod
   public void initializeApp(String appName, ReadableMap options, Callback callback) {
